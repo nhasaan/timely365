@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "1305c515-0a1e-44cf-8358-038a440abfc3",
+		"name": "timesheet-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:2020/api/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMzIzMmRkZWEwNDJiMTM3NGZlZDA3ZCIsImlhdCI6MTUzMDAxNjQ5NH0.MRb_JygE7tSf9KG8sAM8vDAclNr87gycHQIXow20_90",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:2020/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:2020/routes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/api/users/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"nazmul.dev16@gmail.com\",\n  \"password\": \"admin123\",\n  \"fname\": \"Saeef\",\n  \"lname\": \"Ali khan\",\n  \"username\": \"msaeef\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2020/api/users/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"users",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/api/users/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"nazmul.dev16@gmail.com\",\n  \"password\": \"admin123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2020/api/users/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"users",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/api/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMzRiOTlkZWVmOTEwMjViNDg4ODNmYiIsImlhdCI6MTUzMDIwMTc3N30.n7p-nl0y_m0jZJf-oDu8IFmjpr2UUWOP8XFamxClF3o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:2020/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/api/companies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMzExNDUwOTQzNjQzNGFhNDljYzUxNSIsImlhdCI6MTUzMDAwMjMxMH0.EzjXQoOegKLBBFbrmOcKEEo-Vkn6XUkdWt9X-MmhpjA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:2020/api/companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/api/companies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMzI0NDMyNjA1YzI2M2M4Y2E4NjIyNyIsImlhdCI6MTUzMDAyMDk1OX0.NJ1Pe0ZWtp7FwVMlF1MHkuyGG37a9k-zfTryfXgQ9_Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"EchoSys Pvt. Ltd.\",\n  \"country\": \"Bangladesh\",\n  \"created_by\": \"5b324432605c263c8ca86227\",\n  \"updated_by\": \"5b324432605c263c8ca86227\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2020/api/companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2020/api/company/5b324df847a02d424088fd6f",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMzI0NDMyNjA1YzI2M2M4Y2E4NjIyNyIsImlhdCI6MTUzMDAyMDk1OX0.NJ1Pe0ZWtp7FwVMlF1MHkuyGG37a9k-zfTryfXgQ9_Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:2020/api/company/5b324df847a02d424088fd6f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"api",
+						"company",
+						"5b324df847a02d424088fd6f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

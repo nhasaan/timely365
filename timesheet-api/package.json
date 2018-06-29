@@ -1,0 +1,37 @@
+{
+  "name": "timesheetapi",
+  "version": "1.0.0",
+  "description": "EchoSys website API Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "microback",
+    "start": "node build/main.js",
+    "test": "ava --verbose",
+    "test:cover": "nyc ava --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "ava": {
+    "files": [
+      "tests/unit/*.js",
+      "tests/e2e/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "dependencies": {
+    "microback": "^0.1.0",
+    "moment": "^2.18.1",
+    "mongoose-paginate": "^5.0.3",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint": "^5.0.0",
+    "eslint-plugin-react": "^7.10.0",
+    "nyc": "^11.1.0",
+    "supertest": "^3.0.0"
+  }
+}
