@@ -1,7 +1,7 @@
 {
   "name": "timesheetapi",
   "version": "1.0.0",
-  "description": "EchoSys website API Server",
+  "description": "AppBRAIN LABS API Server",
   "main": "index.js",
   "scripts": {
     "dev": "microback",
