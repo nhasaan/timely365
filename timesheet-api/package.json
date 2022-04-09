@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "microback": "^0.1.0",
-    "moment": "^2.18.1",
+    "moment": "^2.29.2",
     "mongoose-paginate": "^5.0.3",
     "uuid": "^3.1.0"
   },
